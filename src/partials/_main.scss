@@ -1,3 +1,4 @@
+// matin
 .matin {
   position: relative;
   width: 100%;
@@ -71,7 +72,7 @@
     bottom: 50px;
   }
   .description {
-    position: fixed;
+    position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -79,14 +80,124 @@
     width: 32%;
     text-align: center;
     h3 {
-      font-family: 'Hachi Maru Pop';
-      font-size: 40px;
-      color: #6AC5F1;
+      @include h3-style;
     }
     button {
       @include btn;
       padding: 20px 35px;
       font-size: 18px;
     }
+  }
+}
+// artist-coaching
+.artist-coaching {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  .artist-coaching-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 53px;
+    width: 31%;
+    text-align: center;
+    h3 {
+      @include h3-style;
+    }
+    span {
+      font-weight: 700;
+      font-size: 38px;
+    }
+  }
+  .online-coures {
+    position: absolute;
+    top: 52%;
+    left: 18%;
+    width: 16%;
+    font-size: 20px;
+    img {
+      width: 145px;
+    }
+    p {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    span {
+      color: $color-span;
+    }
+  }
+  .one-to-one {
+    position: absolute;
+    top: 65%;
+    left: 37%;
+    width: 16%;
+    font-size: 20px;
+    img {
+      width: 145px;
+    }
+    p {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    span {
+      color: $color-span;
+    }
+  }
+  .anywhere {
+    position: absolute;
+    top: 46%;
+    right: 29%;
+    width: 16%;
+    font-size: 20px;
+    img {
+      width: 145px;
+    }
+    p {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    span {
+      color: $color-span;
+    }
+  }
+  .on-time {
+    position: absolute;
+    top: 393px;
+    right: 13%;
+    width: 16%;
+    font-size: 20px;
+    img {
+      width: 145px;
+    }
+    p {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    span {
+      color: $color-span;
+    }
+  }
+  #rotate-drop {
+    transform: rotate(-102deg);
+    position: absolute;
+    left: -170px;
+    width: 683px;
+    margin-top: 80px;
+  }
+  #line {
+    position: absolute;
+    width: 100%;
+    margin-top: 130px;
+  }
+  #circle {
+    position: absolute;
+    right: 0px;
+    width: 220px;
+    bottom: 140px;
   }
 }

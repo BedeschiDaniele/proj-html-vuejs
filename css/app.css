@@ -29,6 +29,7 @@ header .header-top button {
   color: white;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
   padding: 8px 35px;
   margin-left: 50px;
   font-size: 18px;
@@ -147,7 +148,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   bottom: 50px;
 }
 .matin .description {
-  position: fixed;
+  position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -166,6 +167,121 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   color: white;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
   padding: 20px 35px;
   font-size: 18px;
+}
+
+.artist-coaching {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.artist-coaching .artist-coaching-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 53px;
+  width: 31%;
+  text-align: center;
+}
+.artist-coaching .artist-coaching-text h3 {
+  font-family: "Hachi Maru Pop";
+  font-size: 40px;
+  color: #6AC5F1;
+}
+.artist-coaching .artist-coaching-text span {
+  font-weight: 700;
+  font-size: 38px;
+}
+.artist-coaching .online-coures {
+  position: absolute;
+  top: 52%;
+  left: 18%;
+  width: 16%;
+  font-size: 20px;
+}
+.artist-coaching .online-coures img {
+  width: 145px;
+}
+.artist-coaching .online-coures p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.artist-coaching .online-coures span {
+  color: #696969;
+}
+.artist-coaching .one-to-one {
+  position: absolute;
+  top: 65%;
+  left: 37%;
+  width: 16%;
+  font-size: 20px;
+}
+.artist-coaching .one-to-one img {
+  width: 145px;
+}
+.artist-coaching .one-to-one p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.artist-coaching .one-to-one span {
+  color: #696969;
+}
+.artist-coaching .anywhere {
+  position: absolute;
+  top: 46%;
+  right: 29%;
+  width: 16%;
+  font-size: 20px;
+}
+.artist-coaching .anywhere img {
+  width: 145px;
+}
+.artist-coaching .anywhere p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.artist-coaching .anywhere span {
+  color: #696969;
+}
+.artist-coaching .on-time {
+  position: absolute;
+  top: 393px;
+  right: 13%;
+  width: 16%;
+  font-size: 20px;
+}
+.artist-coaching .on-time img {
+  width: 145px;
+}
+.artist-coaching .on-time p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.artist-coaching .on-time span {
+  color: #696969;
+}
+.artist-coaching #rotate-drop {
+  transform: rotate(-102deg);
+  position: absolute;
+  left: -170px;
+  width: 683px;
+  margin-top: 80px;
+}
+.artist-coaching #line {
+  position: absolute;
+  width: 100%;
+  margin-top: 130px;
+}
+.artist-coaching #circle {
+  position: absolute;
+  right: 0px;
+  width: 220px;
+  bottom: 140px;
 }

@@ -4,4 +4,11 @@
   color: white;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
+}
+
+@mixin h3-style {
+  font-family: 'Hachi Maru Pop';
+  font-size: 40px;
+  color: #6AC5F1;
 }
