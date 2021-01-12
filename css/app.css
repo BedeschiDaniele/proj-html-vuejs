@@ -25,13 +25,13 @@ header .header-top span {
 }
 header .header-top button {
   background-color: #EF6F31;
-  padding: 8px 35px;
-  margin-left: 50px;
-  font-size: 18px;
   font-weight: 600;
   color: white;
   border-radius: 8px;
   border: none;
+  padding: 8px 35px;
+  margin-left: 50px;
+  font-size: 18px;
 }
 header .header-down {
   width: 100%;
@@ -73,65 +73,99 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   padding-right: 0px;
 }
 
-.martin {
+.matin {
   position: relative;
   width: 100%;
   height: 810px;
   background-color: #FBF9F6;
 }
-.martin #img-halfdrop {
-  width: 880px;
+.matin #img-halfdrop {
+  width: 945px;
 }
-.martin #img-painting {
+.matin #img-blue-shape {
+  position: absolute;
+  left: -65px;
+  width: 512px;
+  top: 230px;
+}
+.matin #img-painting {
   position: absolute;
   width: 320px;
   height: 415px;
   left: 293px;
   top: 106px;
 }
-.martin #img-moredots {
+.matin #img-moredots {
   position: absolute;
   width: 320px;
   height: 450px;
   left: 15px;
   top: 138px;
 }
-.martin #img-monkey {
+.matin #img-monkey {
   position: absolute;
   left: 111px;
-  bottom: 60px;
+  bottom: 85px;
 }
-.martin #img-man {
+.matin #img-man {
   position: absolute;
   left: 477px;
   bottom: 47px;
 }
-.martin #img-drop {
+.matin #img-drop {
   position: absolute;
   width: 760px;
   height: 760px;
   right: 106px;
 }
-.martin #img-leaf {
+.matin #img-leaf {
   position: absolute;
   width: 165px;
   right: 103px;
   top: 103px;
 }
-.martin #img-paint {
+.matin #img-paint {
   position: absolute;
   width: 340px;
   right: 72px;
   bottom: 0px;
 }
-.martin #img-dots {
+.matin #img-dots {
   position: absolute;
   right: 311px;
   bottom: 31px;
   width: 215px;
 }
-.martin #img-martin {
+.matin #img-yellow-shape {
+  position: absolute;
+  right: 386px;
+  bottom: 83px;
+}
+.matin #img-martin {
   position: absolute;
   right: 208px;
   bottom: 50px;
+}
+.matin .description {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 53px;
+  width: 32%;
+  text-align: center;
+}
+.matin .description h3 {
+  font-family: "Hachi Maru Pop";
+  font-size: 40px;
+  color: #6AC5F1;
+}
+.matin .description button {
+  background-color: #EF6F31;
+  font-weight: 600;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 20px 35px;
+  font-size: 18px;
 }

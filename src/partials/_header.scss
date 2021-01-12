@@ -19,14 +19,10 @@ header {
       font-weight: 700;
     }
     button {
-      background-color: #EF6F31;
+      @include btn;
       padding: 8px 35px;
       margin-left: 50px;
       font-size: 18px;
-      font-weight: 600;
-      color: white;
-      border-radius: 8px;
-      border: none;
     }
   }
   // Header-down

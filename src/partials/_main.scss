@@ -1,0 +1,92 @@
+.matin {
+  position: relative;
+  width: 100%;
+  height: 810px;
+  background-color: #FBF9F6;
+  #img-halfdrop {
+    width: 945px;
+  }
+  #img-blue-shape {
+    position: absolute;
+    left: -65px;
+    width: 512px;
+    top: 230px;
+  }
+  #img-painting {
+    position: absolute;
+    width: 320px;
+    height: 415px;
+    left: 293px;
+    top: 106px;
+  }
+  #img-moredots {
+    position: absolute;
+    width: 320px;
+    height: 450px;
+    left: 15px;
+    top: 138px;
+  }
+  #img-monkey {
+    position: absolute;
+    left: 111px;
+    bottom: 85px;
+  }
+  #img-man {
+    position: absolute;
+    left: 477px;
+    bottom: 47px;
+  }
+  #img-drop {
+    position: absolute;
+    width: 760px;
+    height: 760px;
+    right: 106px;
+  }
+  #img-leaf {
+    position: absolute;
+    width: 165px;
+    right: 103px;
+    top: 103px;
+  }
+  #img-paint {
+    position: absolute;
+    width: 340px;
+    right: 72px;
+    bottom: 0px;
+  }
+  #img-dots {
+    position: absolute;
+    right: 311px;
+    bottom: 31px;
+    width: 215px;
+  }
+  #img-yellow-shape {
+    position: absolute;
+    right: 386px;
+    bottom: 83px;
+  }
+  #img-martin {
+    position: absolute;
+    right: 208px;
+    bottom: 50px;
+  }
+  .description {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 53px;
+    width: 32%;
+    text-align: center;
+    h3 {
+      font-family: 'Hachi Maru Pop';
+      font-size: 40px;
+      color: #6AC5F1;
+    }
+    button {
+      @include btn;
+      padding: 20px 35px;
+      font-size: 18px;
+    }
+  }
+}
