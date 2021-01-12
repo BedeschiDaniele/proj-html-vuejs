@@ -82,6 +82,30 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 .martin #img-halfdrop {
   width: 880px;
 }
+.martin #img-painting {
+  position: absolute;
+  width: 320px;
+  height: 415px;
+  left: 293px;
+  top: 106px;
+}
+.martin #img-moredots {
+  position: absolute;
+  width: 320px;
+  height: 450px;
+  left: 15px;
+  top: 138px;
+}
+.martin #img-monkey {
+  position: absolute;
+  left: 111px;
+  bottom: 60px;
+}
+.martin #img-man {
+  position: absolute;
+  left: 477px;
+  bottom: 47px;
+}
 .martin #img-drop {
   position: absolute;
   width: 760px;
