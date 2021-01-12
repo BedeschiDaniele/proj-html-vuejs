@@ -175,7 +175,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 .artist-coaching {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 760px;
 }
 .artist-coaching .artist-coaching-text {
   position: absolute;
@@ -197,7 +197,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .artist-coaching .online-coures {
   position: absolute;
-  top: 52%;
+  top: 39%;
   left: 18%;
   width: 16%;
   font-size: 20px;
@@ -215,7 +215,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .artist-coaching .one-to-one {
   position: absolute;
-  top: 65%;
+  top: 49%;
   left: 37%;
   width: 16%;
   font-size: 20px;
@@ -233,7 +233,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .artist-coaching .anywhere {
   position: absolute;
-  top: 46%;
+  top: 35%;
   right: 29%;
   width: 16%;
   font-size: 20px;
@@ -251,7 +251,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .artist-coaching .on-time {
   position: absolute;
-  top: 393px;
+  top: 382px;
   right: 13%;
   width: 16%;
   font-size: 20px;
@@ -284,4 +284,56 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   right: 0px;
   width: 220px;
   bottom: 140px;
+}
+
+.martin-garrix {
+  position: relative;
+  width: 100%;
+}
+.martin-garrix #comma {
+  position: absolute;
+  left: 28%;
+}
+.martin-garrix .container {
+  display: flex;
+  width: 75%;
+  height: 600px;
+  margin: 0 auto;
+}
+.martin-garrix .panel-left {
+  width: 38%;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 52px;
+  padding-left: 93px;
+}
+.martin-garrix .panel-left h3 {
+  font-family: "Hachi Maru Pop";
+  font-size: 40px;
+  color: #6AC5F1;
+  padding-top: 50px;
+}
+.martin-garrix .panel-right {
+  width: 62%;
+  padding-top: 69px;
+  text-align: inherit;
+  font-size: 27px;
+  padding-left: 153px;
+  color: #696969;
+}
+.martin-garrix .panel-right p:nth-child(2) {
+  margin-top: 30px;
+}
+.martin-garrix .panel-right button {
+  background-color: #EF6F31;
+  font-weight: 600;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 35px;
+  font-size: 18px;
+  margin-top: 25px;
+  background-color: rgba(239, 111, 49, 0.1);
+  color: #EF7033;
 }
