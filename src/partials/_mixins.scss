@@ -12,3 +12,8 @@
   font-size: 40px;
   color: #6AC5F1;
 }
+
+@mixin p-card-style {
+  padding-top: 20px;
+  font-size: 20px;
+}
