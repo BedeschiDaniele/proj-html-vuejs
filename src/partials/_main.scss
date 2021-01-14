@@ -82,6 +82,10 @@
     h3 {
       @include h3-style;
     }
+    .artist {
+      font-size: 42px;
+      margin-bottom: 25px;
+    }
     button {
       @include btn;
       padding: 20px 35px;
@@ -90,6 +94,20 @@
     button:hover {
       background-color: #6AC5F1;
     }
+  }
+  .shop {
+    position: fixed;
+    right: 0%;
+    top: 20%;
+    background-color: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px #888888;
+    z-index: 1;
   }
 }
 // artist-coaching
@@ -110,7 +128,7 @@
     }
     span {
       font-weight: 700;
-      font-size: 38px;
+      font-size: 35px;
     }
   }
   .online-coures {
@@ -118,7 +136,7 @@
     top: 39%;
     left: 18%;
     width: 16%;
-    font-size: 20px;
+    font-size: $font-artist-span;
     img {
       width: 145px;
     }
@@ -136,7 +154,7 @@
     top: 49%;
     left: 37%;
     width: 16%;
-    font-size: 20px;
+    font-size: $font-artist-span;
     img {
       width: 145px;
     }
@@ -154,7 +172,7 @@
     top: 35%;
     right: 29%;
     width: 16%;
-    font-size: 20px;
+    font-size: $font-artist-span;
     img {
       width: 145px;
     }
@@ -170,9 +188,9 @@
   .on-time {
     position: absolute;
     top: 382px;
-    right: 13%;
+    right: 12%;
     width: 16%;
-    font-size: 20px;
+    font-size: $font-artist-span;
     img {
       width: 145px;
     }
@@ -233,7 +251,7 @@
     width: 62%;
     padding-top: 69px;
     text-align: inherit;
-    font-size: 27px;
+    font-size: 24px;
     padding-left: 153px;
     color: $color-span;
     p:nth-child(2) {
@@ -243,7 +261,7 @@
       @include btn;
       padding: 20px 35px;
       font-size: 18px;
-      margin-top: 25px;
+      margin-top: 50px;
       background-color: rgba(239, 111, 49, 0.1);
       color: #EF7033;
     }
@@ -460,6 +478,12 @@
       transform: translate(-50%, -50%);
       width: 10%;
     }
+    #shape-blue-back {
+      position: absolute;
+      top: 585px;
+      right: 33%;
+      width: 12%;
+    }
   }
   .container-artist {
     display: flex;
@@ -543,19 +567,24 @@
       }
     }
   }
-  #info-arrow {
-    font-size: 22px;
-    font-weight: 600;
-    a {
-      color: $color-grey;
-      text-decoration: none;
-    }
-    i {
-      color: $color-arrow;
-      font-size: 16px;
-    }
-    #color-view {
-      color: $color-arrow;
+  .details {
+    position: absolute;
+    right: 40%;
+    #info-arrow {
+      font-size: 22px;
+      font-weight: 600;
+      a {
+        color: $color-grey;
+        text-decoration: none;
+      }
+      i {
+        color: $color-arrow;
+        font-size: 16px;
+      }
+      #color-view {
+        color: $color-arrow;
+        border-bottom: 1px solid lightgray;
+      }
     }
   }
 }
@@ -563,6 +592,27 @@
 .work-together {
   text-align: center;
   margin-bottom: 100px;
+  .events {
+    position: relative;
+    #text-events {
+      position: absolute;
+      left: -2%;
+      transform: rotate(90deg) translate(78%, 67%);
+      font-size: 170px;
+      color: #FFFFFF;
+      text-shadow: -1px -1px 0 #F5ECE4, 1px -1px 0 #F5ECE4, -1px 1px 0 #F5ECE4, 1px 1px 0 #F5ECE4;
+    }
+  }
+  .semi-ball {
+    position: relative;
+    #ball {
+      position: absolute;
+      left: -11%;
+      top: 485px;
+      height: 275px;
+      transform: rotate(270deg);
+    }
+  }
   .circle-right {
     position: relative;
     #circle {

@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Playfair Display", Sans-serif;
 }
 
 header .header-top {
@@ -13,6 +14,7 @@ header .header-top {
   background-color: #F5F5F5;
 }
 header .header-top h3 {
+  font-size: 15px;
   color: grey;
 }
 header .header-top i {
@@ -161,6 +163,10 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   font-size: 40px;
   color: #6AC5F1;
 }
+.matin .description .artist {
+  font-size: 42px;
+  margin-bottom: 25px;
+}
 .matin .description button {
   background-color: #EF6F31;
   font-weight: 600;
@@ -173,6 +179,20 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .matin .description button:hover {
   background-color: #6AC5F1;
+}
+.matin .shop {
+  position: fixed;
+  right: 0%;
+  top: 20%;
+  background-color: white;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px #888888;
+  z-index: 1;
 }
 
 .artist-coaching {
@@ -196,14 +216,14 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .artist-coaching .artist-coaching-text span {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 35px;
 }
 .artist-coaching .online-coures {
   position: absolute;
   top: 39%;
   left: 18%;
   width: 16%;
-  font-size: 20px;
+  font-size: 18px;
 }
 .artist-coaching .online-coures img {
   width: 145px;
@@ -221,7 +241,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   top: 49%;
   left: 37%;
   width: 16%;
-  font-size: 20px;
+  font-size: 18px;
 }
 .artist-coaching .one-to-one img {
   width: 145px;
@@ -239,7 +259,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   top: 35%;
   right: 29%;
   width: 16%;
-  font-size: 20px;
+  font-size: 18px;
 }
 .artist-coaching .anywhere img {
   width: 145px;
@@ -255,9 +275,9 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 .artist-coaching .on-time {
   position: absolute;
   top: 382px;
-  right: 13%;
+  right: 12%;
   width: 16%;
-  font-size: 20px;
+  font-size: 18px;
 }
 .artist-coaching .on-time img {
   width: 145px;
@@ -320,7 +340,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   width: 62%;
   padding-top: 69px;
   text-align: inherit;
-  font-size: 27px;
+  font-size: 24px;
   padding-left: 153px;
   color: #696969;
 }
@@ -336,7 +356,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   cursor: pointer;
   padding: 20px 35px;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 50px;
   background-color: rgba(239, 111, 49, 0.1);
   color: #EF7033;
 }
@@ -404,7 +424,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .testimonials .cards p {
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 19px;
   color: #696969;
   line-height: 30px;
 }
@@ -564,6 +584,12 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   transform: translate(-50%, -50%);
   width: 10%;
 }
+.blog .back-img #shape-blue-back {
+  position: absolute;
+  top: 585px;
+  right: 33%;
+  width: 12%;
+}
 .blog .container-artist {
   display: flex;
 }
@@ -660,25 +686,51 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 .blog .container-artist .sub-container .sub-info .calender span {
   margin-right: 19px;
 }
-.blog #info-arrow {
+.blog .details {
+  position: absolute;
+  right: 40%;
+}
+.blog .details #info-arrow {
   font-size: 22px;
   font-weight: 600;
 }
-.blog #info-arrow a {
+.blog .details #info-arrow a {
   color: #8C89A2;
   text-decoration: none;
 }
-.blog #info-arrow i {
+.blog .details #info-arrow i {
   color: #EF6F31;
   font-size: 16px;
 }
-.blog #info-arrow #color-view {
+.blog .details #info-arrow #color-view {
   color: #EF6F31;
+  border-bottom: 1px solid lightgray;
 }
 
 .work-together {
   text-align: center;
   margin-bottom: 100px;
+}
+.work-together .events {
+  position: relative;
+}
+.work-together .events #text-events {
+  position: absolute;
+  left: -2%;
+  transform: rotate(90deg) translate(78%, 67%);
+  font-size: 170px;
+  color: #FFFFFF;
+  text-shadow: -1px -1px 0 #F5ECE4, 1px -1px 0 #F5ECE4, -1px 1px 0 #F5ECE4, 1px 1px 0 #F5ECE4;
+}
+.work-together .semi-ball {
+  position: relative;
+}
+.work-together .semi-ball #ball {
+  position: absolute;
+  left: -11%;
+  top: 485px;
+  height: 275px;
+  transform: rotate(270deg);
 }
 .work-together .circle-right {
   position: relative;
