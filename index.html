@@ -10,367 +10,362 @@
     <title>Artist</title>
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <div class="header-top">
-        <h3>Starts TOMORROW! Our biggest event of the year...</h3>
-        <i class="far fa-clock"></i>
-        <span>00 : 00 : 00 : 00</span>
-        <button type="button" name="button">Get ticket</button>
-      </div>
-      <div class="header-down">
-        <div class="wrapper-80">
-          <div class="img-maxcoach">
-              <img src="img/dark-logo.png" alt="">
-          </div>
-          <div class="nav-bar">
-            <ul>
-              <li><a href="">Home <i class="fas fa-chevron-down"></i></a></li>
-              <li><a href="">Pages <i class="fas fa-chevron-down"></i></a></li>
-              <li><a href="">Courses <i class="fas fa-chevron-down"></i></a></li>
-              <li><a href="">Features <i class="fas fa-chevron-down"></i></a></li>
-              <li><a href=""></a>Blog <i class="fas fa-chevron-down"></i></li>
-              <li><a href="">Shop <i class="fas fa-chevron-down"></i></a></li>
-            </ul>
-          </div>
-          <div class="social">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin"></i>
+    <div class="root">
+      <!-- Header -->
+      <header>
+        <div class="header-top">
+          <h3>Starts TOMORROW! Our biggest event of the year...</h3>
+          <i class="far fa-clock"></i>
+          <span>00 : 00 : 00 : 00</span>
+          <button type="button" name="button">Get ticket</button>
+        </div>
+        <div class="header-down">
+          <div class="wrapper-80">
+            <div class="img-maxcoach">
+                <img :src=webSiteLogo :alt=webSiteLogo>
+            </div>
+            <div class="nav-bar">
+              <ul>
+                <li v-for="nav in navbar"><a href="">{{nav.menu}}<i :class=nav.arrow></i></a></li>
+              </ul>
+            </div>
+            <div class="social">
+              <a v-for="icon in icons" href="#"><i :class=icon.icon></i></a>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- Main -->
-    <main>
-      <!-- Matin's section -->
-      <div class="matin">
-        <!-- Img Panel-left -->
-        <img id="img-halfdrop" src="img/artist-shape-02-600x324.png" alt="artist-shape-02">
-        <img id="img-blue-shape" src="img/blue-shape.svg" alt="artist-shape-02">
-        <img id="img-moredots" src="img/artist-shape-03.png" alt="artist-shape-02">
-        <img id="img-man" src="img/artist-hero-image-03.png" alt="artist-shape-02">
-        <img id="img-painting" src="img/artist-hero-image-02.jpg" alt="artist-shape-02">
-        <img id="img-monkey" src="img/artist-hero-image-01.jpg" alt="artist-shape-02">
-        <!-- Description -->
-        <div class="description">
-          <h3>Hello, Im Matin</h3>
-          <h5>Artist Coaching And Mentoring Might Be for You.</h5>
-          <button type="button" name="button">Get started today</button>
-        </div>
-        <!-- Img Panel-right -->
-        <img id="img-drop" src="img/artist-shape-01.png" alt="drop">
-        <img id="img-leaf" src="img/artist-shape-04.png" alt="leaf">
-        <img id="img-paint" src="img/artist-shape-05.png" alt="paint">
-        <img id="img-dots" src="img/maxcoach-shape-12-150x150.png" alt="dots">
-        <img id="img-yellow-shape" src="img/yellow-shape.svg" alt="dots">
-        <img id="img-martin" src="img/artist-hero-image-04.jpg" alt="paint">
-      </div>
-      <!-- Artist coaching section -->
-      <div class="artist-coaching">
-        <img id="rotate-drop"src="img/artist-shape-01-600x577.png" alt="artist-shape">
-        <img id="line"src="img/maxcoach-shape-14-1024x229.png" alt="line">
-        <img id="circle"src="img/maxcoach-shape-13-150x150.png" alt="circle">
-        <div class="artist-coaching-text">
-          <h3>Artist Coaching</h3>
-          <span>I understand what it takes to create. I can help you with</span>
-        </div>
-        <div class="online-coures">
-          <img src="img/artist-box-image-01.png" alt="tree">
-          <p>Online Coures</p>
-          <span>Online art coaching now offers you a very powerful way to redesign your artist mind.</span>
-        </div>
-        <div class="one-to-one">
-          <img src="img/artist-box-image-02.png" alt="rainbow">
-          <p>One to One</p>
-          <span>Getting the necessary clarity about the current state to help you improve your ability.</span>
-        </div>
-        <div class="anywhere">
-          <img src="img/artist-box-image-03.png" alt="rainbow">
-          <p>Anywhere</p>
-          <span>Access to valuable and portable program which allow you to setup and live anywhere you want.</span>
-        </div>
-        <div class="on-time">
-          <img src="img/artist-box-image-04.png" alt="rainbow">
-          <p>On Time</p>
-          <span>Punctuality is our top priority because it's an essential criteria to assess a program quality.</span>
-        </div>
-      </div>
-      <!-- Martin-garrix -->
-      <div class="martin-garrix">
-        <img id="comma"src="img/artist-quote-icon.png" alt="comma">
-        <div class="container">
-          <div class="panel-left">
-            <p>I coach and mentor visual artists, like you, to Create Like You Mean It</p>
-            <h3>Martin Garrix</h3>
-          </div>
-          <div class="panel-right">
-            <p>As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action. I help you get you back on track to being the productive, creative, meaningful and authentic artist you truly want to be.I support artists in crafting and living a creative life as well as feeling good about themselves and their art.</p>
-            <p>As an artist and an educator for nearly 30 years, I understand what it takes to create.</p>
+      </header>
+      <!-- Main -->
+      <main>
+        <!-- Matin's section -->
+        <div class="matin">
+          <!-- Img Panel-left -->
+          <img id="img-halfdrop" src="img/artist-shape-02-600x324.png" alt="artist-shape-02">
+          <img id="img-blue-shape" src="img/blue-shape.svg" alt="artist-shape-02">
+          <img id="img-moredots" src="img/artist-shape-03.png" alt="artist-shape-02">
+          <img id="img-man" src="img/artist-hero-image-03.png" alt="artist-shape-02">
+          <img id="img-painting" src="img/artist-hero-image-02.jpg" alt="artist-shape-02">
+          <img id="img-monkey" src="img/artist-hero-image-01.jpg" alt="artist-shape-02">
+          <!-- Description -->
+          <div class="description">
+            <h3>Hello, Im Matin</h3>
+            <h5>Artist Coaching And Mentoring Might Be for You.</h5>
             <button type="button" name="button">Get started today</button>
           </div>
+          <!-- Img Panel-right -->
+          <img id="img-drop" src="img/artist-shape-01.png" alt="drop">
+          <img id="img-leaf" src="img/artist-shape-04.png" alt="leaf">
+          <img id="img-paint" src="img/artist-shape-05.png" alt="paint">
+          <img id="img-dots" src="img/maxcoach-shape-12-150x150.png" alt="dots">
+          <img id="img-yellow-shape" src="img/yellow-shape.svg" alt="dots">
+          <img id="img-martin" src="img/artist-hero-image-04.jpg" alt="paint">
         </div>
-      </div>
-      <!-- Murales Youtube -->
-      <div class="murales">
-        <img id="blue-sh"src="img/blue-shape.svg" alt="blue-shape">
-        <img id="dot-green"src="img/maxcoach-shape-05-150x150.png" alt="dot-green">
-        <img id="dot-blue"src="img/maxcoach-shape-12-100x100.png" alt="dot-green">
-        <img id="murales-man"src="img/murales.png" alt="murales">
-      </div>
-      <!-- Testimonials -->
-      <div class="testimonials">
-        <h3>Testimonials</h3>
-        <p>Why do people love me?</p>
-        <div class="cards">
-          <div class="card-florence">
-            <h4>It's a choice of quality for people with special needs</h4>
-            <p>I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p>
-            <div class="avatar">
-              <img src="img/artist-testimonial-avatar-02.jpg" alt="florence-avatar">
-              <div class="description-avatar">
-                <h4>Florence Themes</h4>
-                <span>/ Muktimedia Admin</span>
-              </div>
-
-            </div>
-          </div>
-          <div class="card-mina">
-            <h4>High level of efficiency and scientific teaching methods</h4>
-            <p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p>
-            <div class="avatar">
-                <img src="img/artist-testimonial-avatar-04.jpg" alt="florence-avatar">
-                <div class="description-avatar">
-                  <h4>Mina Hollance</h4>
-                  <span>/ Freelancer</span>
-                </div>
-            </div>
-          </div>
-          <div class="card-madley">
-            <h4>Professional team of specialists and passionate mentors at reach </h4>
-            <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
-            <div class="avatar">
-              <img src="img/artist-testimonial-avatar-01.jpg" alt="madley-avatar">
-              <div class="description-avatar">
-                <h4>Madley Pondor</h4>
-                <span>/ IT Specialist</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="dot-images">
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-        </div>
-      </div>
-      <!-- Latest Online Courses -->
-      <div class="courses">
-        <h3>Artist coaching</h3>
-        <p>Latest Online Courses</p>
-        <div class="course-80">
-          <div class="select-course">
-            <img src="img/artist-course-08-480x480.jpg" alt="paint">
-            <span>$18.00</span>
-            <span class="name-course">The Acrylic Painting Academy</span>
-            <div class="lessons">
-              <i class="far fa-file-alt"></i>
-              <span>4 Lessons</span>
-              <i class="far fa-user"></i>
-              <span>50 Students</span>
-            </div>
-          </div>
-          <div class="select-course">
-            <img src="img/artist-course-07-480x480.jpg" alt="paint">
-            <span>$21.00</span>
-            <span class="name-course">Drawing and Shading: Complete Course</span>
-            <div class="lessons">
-              <i class="far fa-file-alt"></i>
-              <span>14 Lessons</span>
-              <i class="far fa-user"></i>
-              <span>50 Students</span>
-            </div>
-          </div>
-          <div class="select-course">
-            <img src="img/artist-course-06-480x480.jpg" alt="paint">
-            <span>$19.00</span>
-            <span class="name-course">The Color Theory for Digital Artist</span>
-            <div class="lessons">
-              <i class="far fa-file-alt"></i>
-              <span>7 Lessons</span>
-              <i class="far fa-user"></i>
-              <span>50 Students</span>
-            </div>
-          </div>
-          <div class="select-course">
-            <img src="img/artist-course-05-480x480.jpg" alt="paint">
-            <span>$35.00</span>
-            <span class="name-course">Ultimate Guide to Digital Sketching for Beginner</span>
-            <div class="lessons">
-              <i class="far fa-file-alt"></i>
-              <span>14 Lessons</span>
-              <i class="far fa-user"></i>
-              <span>50 Students</span>
-            </div>
-          </div>
-          <div class="select-course">
-            <img src="img/artist-course-04-480x480.jpg" alt="paint">
-            <span>$19.00</span>
-            <span class="name-course">Portrait Drawing The Smart Way</span>
-            <div class="lessons">
-              <i class="far fa-file-alt"></i>
-              <span>2 Lessons</span>
-              <i class="far fa-user"></i>
-              <span>50 Students</span>
-            </div>
-          </div>
-          <div class="select-course">
-            <img src="img/artist-course-03-480x480.jpg" alt="paint">
-            <span>$19.00</span>
-            <span class="name-course">Mastering Watercolor Painting from Beginner</span>
-            <div class="lessons">
-              <i class="far fa-file-alt"></i>
-              <span>9 Lessons</span>
-              <i class="far fa-user"></i>
-              <span>50 Students</span>
-            </div>
-          </div>
-          <div class="select-course">
-            <img src="img/artist-course-02-480x480.jpg" alt="paint">
-            <span>$25.00</span>
-            <span class="name-course">The Art & Science of Drawing</span>
-            <div class="lessons">
-              <i class="far fa-file-alt"></i>
-              <span>4 Lessons</span>
-              <i class="far fa-user"></i>
-              <span>50 Students</span>
-            </div>
-          </div>
-          <div class="select-course">
-            <img src="img/artist-course-01-480x480.jpg" alt="paint">
-            <span>$22.00</span>
-            <span class="name-course">The Colored Pencil Drawing Course</span>
-            <div class="lessons">
-              <i class="far fa-file-alt"></i>
-              <span>6 Lessons</span>
-              <i class="far fa-user"></i>
-              <span>50 Students</span>
-            </div>
-          </div>
-        </div>
-        <button type="button" name="button">View all courses <i class="fas fa-arrow-right"></i></button>
-      </div>
-      <!-- Latest From The Blog -->
-      <div class="blog">
-        <h3>Articles and Tips</h3>
-        <p>Latest From The Blog</p>
-        <div class="back-img">
-          <img id="line-e"src="img/maxcoach-shape-14-1536x343.png" alt="double-e">
-          <img id="dot-artist" src="img/maxcoach-shape-05-150x150.png" alt="dot">
-        </div>
-        <div class="container-artist">
-          <div class="sub-container right">
-            <div class="man-artist"></div>
-            <div class="sub-info">
-              <h4 class="post-image">ARTIST</h4>
-              <p class="post-title">Brush Strokes Energize Trees in Paintings</p>
-              <div class="calender">
-                <i class="far fa-calendar"></i>
-                <span>Jan 15, 2021</span>
-                <i class="far fa-eye"></i>
-                <span>768 views</span>
-              </div>
-            </div>
-          </div>
-          <div class="picture-artist">
-            <div class="aaa">
-              <h4>ARTIST</h4>
-              <p>Connection Between Self-Portraits and Identity</p>
-              <div class="calender">
-                <i class="far fa-calendar"></i>
-                <span>Jan 15, 2021</span>
-                <i class="far fa-eye"></i>
-                <span>397 views</span>
-              </div>
-            </div>
-          </div>
-          <div class="sub-container left">
-            <div class="women-artist"></div>
-            <div class="sub-info">
-              <h4 class="post-image">ARTIST</h4>
-              <p class="post-title">Pocket-Sized Notebooks Hold Miniature Paintings</p>
-              <div class="calender">
-                <i class="far fa-calendar"></i>
-                <span>Jan 15, 2021</span>
-                <i class="far fa-eye"></i>
-                <span>667 views</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <span id="info-arrow"><a href="">Get into details now?​ <span id="color-view">View all posts </span><i class="fas fa-arrow-right"></i></a></span>
-      </div>
-      <!-- Let's Work Together -->
-      <div class="work-together">
-        <h3>Upcoming Events</h3>
-        <p>Let's Work Together</p>
-        <div class="circle-right">
+        <!-- Artist coaching section -->
+        <div class="artist-coaching">
+          <img id="rotate-drop"src="img/artist-shape-01-600x577.png" alt="artist-shape">
+          <img id="line"src="img/maxcoach-shape-14-1024x229.png" alt="line">
           <img id="circle"src="img/maxcoach-shape-13-150x150.png" alt="circle">
-        </div>
-        <div class="wrapper-66">
-          <div class="sub-top">
-            <img id="circle" src="img/artist-event-04-250x300.jpg" alt="women-coffe">
-            <div class="women-coffe-info">
-              <span class="date">NOV 22, 2020</span>
-              <span class="shop">Storytelling Workshop</span>
-              <span><i class="fas fa-map-marker-alt"></i> Texas, US</span>
-            </div>
-            <img id="painting-picture"src="img/artist-event-03-250x300.jpg" alt="painting-picture">
-            <div class="contest">
-              <span class="date">OCT 10, 2020</span>
-              <span class="shop">Painting Art Contest 2020</span>
-              <span><i class="fas fa-map-marker-alt"></i> New York, US</span>
-            </div>
+          <div class="artist-coaching-text">
+            <h3>Artist Coaching</h3>
+            <span>I understand what it takes to create. I can help you with</span>
           </div>
-          <div class="sub-down">
-            <div class="funny-girl">
-              <span class="date">NOV 23, 2020</span>
-              <span class="shop">International Art Fair 2020</span>
-              <span><i class="fas fa-map-marker-alt"></i> Hamburg, Germany</span>
-            </div>
-            <img src="img/artist-event-02-250x300.jpg" alt="funny-girl">
-            <div class="wall-paint">
-              <span class="date">DEC 15, 2020</span>
-              <span class="shop">Street Performance: Call for Artist</span>
-              <span><i class="fas fa-map-marker-alt"></i> Illinois, US</span>
-            </div>
-            <img id="painting-picture2"src="img/artist-event-01-250x300.jpg" alt="wall-paint">
+          <div class="online-coures">
+            <img src="img/artist-box-image-01.png" alt="tree">
+            <p>Online Coures</p>
+            <span>Online art coaching now offers you a very powerful way to redesign your artist mind.</span>
+          </div>
+          <div class="one-to-one">
+            <img src="img/artist-box-image-02.png" alt="rainbow">
+            <p>One to One</p>
+            <span>Getting the necessary clarity about the current state to help you improve your ability.</span>
+          </div>
+          <div class="anywhere">
+            <img src="img/artist-box-image-03.png" alt="rainbow">
+            <p>Anywhere</p>
+            <span>Access to valuable and portable program which allow you to setup and live anywhere you want.</span>
+          </div>
+          <div class="on-time">
+            <img src="img/artist-box-image-04.png" alt="rainbow">
+            <p>On Time</p>
+            <span>Punctuality is our top priority because it's an essential criteria to assess a program quality.</span>
           </div>
         </div>
-      </div>
-      <!-- Newsletter -->
-      <div class="newsletter">
-        <div class="imgs-sides">
-          <img id="left-side"src="img/artist-shape-color-paint-top-left-300x170.png" alt="artist-hero">
-          <div class="email">
-            <div class="touch">
-              <h4>Newsletter to get in touch</h4>
+        <!-- Martin-garrix -->
+        <div class="martin-garrix">
+          <img id="comma"src="img/artist-quote-icon.png" alt="comma">
+          <div class="container">
+            <div class="panel-left">
+              <p>I coach and mentor visual artists, like you, to Create Like You Mean It</p>
+              <h3>Martin Garrix</h3>
             </div>
-            <div class="write-email">
-              <input type="text" name="" value="" placeholder="Your e-mail">
-              <div class="arrow-email">
-                <button type="button" name="button"><i class="fas fa-long-arrow-alt-right"></i></button>
+            <div class="panel-right">
+              <p>As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action. I help you get you back on track to being the productive, creative, meaningful and authentic artist you truly want to be.I support artists in crafting and living a creative life as well as feeling good about themselves and their art.</p>
+              <p>As an artist and an educator for nearly 30 years, I understand what it takes to create.</p>
+              <button type="button" name="button">Get started today</button>
+            </div>
+          </div>
+        </div>
+        <!-- Murales Youtube -->
+        <div class="murales">
+          <img id="blue-sh"src="img/blue-shape.svg" alt="blue-shape">
+          <img id="dot-green"src="img/maxcoach-shape-05-150x150.png" alt="dot-green">
+          <img id="dot-blue"src="img/maxcoach-shape-12-100x100.png" alt="dot-green">
+          <img id="murales-man"src="img/murales.png" alt="murales">
+        </div>
+        <!-- Testimonials -->
+        <div class="testimonials">
+          <h3>Testimonials</h3>
+          <p>Why do people love me?</p>
+          <div class="cards">
+            <div class="card-florence">
+              <h4>It's a choice of quality for people with special needs</h4>
+              <p>I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p>
+              <div class="avatar">
+                <img src="img/artist-testimonial-avatar-02.jpg" alt="florence-avatar">
+                <div class="description-avatar">
+                  <h4>Florence Themes</h4>
+                  <span>/ Muktimedia Admin</span>
+                </div>
+
+              </div>
+            </div>
+            <div class="card-mina">
+              <h4>High level of efficiency and scientific teaching methods</h4>
+              <p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p>
+              <div class="avatar">
+                  <img src="img/artist-testimonial-avatar-04.jpg" alt="florence-avatar">
+                  <div class="description-avatar">
+                    <h4>Mina Hollance</h4>
+                    <span>/ Freelancer</span>
+                  </div>
+              </div>
+            </div>
+            <div class="card-madley">
+              <h4>Professional team of specialists and passionate mentors at reach </h4>
+              <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
+              <div class="avatar">
+                <img src="img/artist-testimonial-avatar-01.jpg" alt="madley-avatar">
+                <div class="description-avatar">
+                  <h4>Madley Pondor</h4>
+                  <span>/ IT Specialist</span>
+                </div>
               </div>
             </div>
           </div>
-          <img id="right-side"src="img/artist-shape-color-paint-bottom-right-300x153.png" alt="artist-shape-color-paint">
+          <div class="dot-images">
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+          </div>
         </div>
-      </div>
-    </main>
-    <!-- Footer -->
-    <footer>
-    </footer>
+        <!-- Latest Online Courses -->
+        <div class="courses">
+          <h3>Artist coaching</h3>
+          <p>Latest Online Courses</p>
+          <div class="course-80">
+            <div class="select-course">
+              <img src="img/artist-course-08-480x480.jpg" alt="paint">
+              <span>$18.00</span>
+              <span class="name-course">The Acrylic Painting Academy</span>
+              <div class="lessons">
+                <i class="far fa-file-alt"></i>
+                <span>4 Lessons</span>
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+            <div class="select-course">
+              <img src="img/artist-course-07-480x480.jpg" alt="paint">
+              <span>$21.00</span>
+              <span class="name-course">Drawing and Shading: Complete Course</span>
+              <div class="lessons">
+                <i class="far fa-file-alt"></i>
+                <span>14 Lessons</span>
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+            <div class="select-course">
+              <img src="img/artist-course-06-480x480.jpg" alt="paint">
+              <span>$19.00</span>
+              <span class="name-course">The Color Theory for Digital Artist</span>
+              <div class="lessons">
+                <i class="far fa-file-alt"></i>
+                <span>7 Lessons</span>
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+            <div class="select-course">
+              <img src="img/artist-course-05-480x480.jpg" alt="paint">
+              <span>$35.00</span>
+              <span class="name-course">Ultimate Guide to Digital Sketching for Beginner</span>
+              <div class="lessons">
+                <i class="far fa-file-alt"></i>
+                <span>14 Lessons</span>
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+            <div class="select-course">
+              <img src="img/artist-course-04-480x480.jpg" alt="paint">
+              <span>$19.00</span>
+              <span class="name-course">Portrait Drawing The Smart Way</span>
+              <div class="lessons">
+                <i class="far fa-file-alt"></i>
+                <span>2 Lessons</span>
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+            <div class="select-course">
+              <img src="img/artist-course-03-480x480.jpg" alt="paint">
+              <span>$19.00</span>
+              <span class="name-course">Mastering Watercolor Painting from Beginner</span>
+              <div class="lessons">
+                <i class="far fa-file-alt"></i>
+                <span>9 Lessons</span>
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+            <div class="select-course">
+              <img src="img/artist-course-02-480x480.jpg" alt="paint">
+              <span>$25.00</span>
+              <span class="name-course">The Art & Science of Drawing</span>
+              <div class="lessons">
+                <i class="far fa-file-alt"></i>
+                <span>4 Lessons</span>
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+            <div class="select-course">
+              <img src="img/artist-course-01-480x480.jpg" alt="paint">
+              <span>$22.00</span>
+              <span class="name-course">The Colored Pencil Drawing Course</span>
+              <div class="lessons">
+                <i class="far fa-file-alt"></i>
+                <span>6 Lessons</span>
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+          </div>
+          <button type="button" name="button">View all courses <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <!-- Latest From The Blog -->
+        <div class="blog">
+          <h3>Articles and Tips</h3>
+          <p>Latest From The Blog</p>
+          <div class="back-img">
+            <img id="line-e"src="img/maxcoach-shape-14-1536x343.png" alt="double-e">
+            <img id="dot-artist" src="img/maxcoach-shape-05-150x150.png" alt="dot">
+          </div>
+          <div class="container-artist">
+            <div class="sub-container right">
+              <div class="man-artist"></div>
+              <div class="sub-info">
+                <h4 class="post-image">ARTIST</h4>
+                <p class="post-title">Brush Strokes Energize Trees in Paintings</p>
+                <div class="calender">
+                  <i class="far fa-calendar"></i>
+                  <span>Jan 15, 2021</span>
+                  <i class="far fa-eye"></i>
+                  <span>768 views</span>
+                </div>
+              </div>
+            </div>
+            <div class="picture-artist">
+              <div class="aaa">
+                <h4>ARTIST</h4>
+                <p>Connection Between Self-Portraits and Identity</p>
+                <div class="calender">
+                  <i class="far fa-calendar"></i>
+                  <span>Jan 15, 2021</span>
+                  <i class="far fa-eye"></i>
+                  <span>397 views</span>
+                </div>
+              </div>
+            </div>
+            <div class="sub-container left">
+              <div class="women-artist"></div>
+              <div class="sub-info">
+                <h4 class="post-image">ARTIST</h4>
+                <p class="post-title">Pocket-Sized Notebooks Hold Miniature Paintings</p>
+                <div class="calender">
+                  <i class="far fa-calendar"></i>
+                  <span>Jan 15, 2021</span>
+                  <i class="far fa-eye"></i>
+                  <span>667 views</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span id="info-arrow"><a href="">Get into details now?​ <span id="color-view">View all posts </span><i class="fas fa-arrow-right"></i></a></span>
+        </div>
+        <!-- Let's Work Together -->
+        <div class="work-together">
+          <h3>Upcoming Events</h3>
+          <p>Let's Work Together</p>
+          <div class="circle-right">
+            <img id="circle"src="img/maxcoach-shape-13-150x150.png" alt="circle">
+          </div>
+          <div class="wrapper-66">
+            <div class="sub-top">
+              <img id="circle" src="img/artist-event-04-250x300.jpg" alt="women-coffe">
+              <div class="women-coffe-info">
+                <span class="date">NOV 22, 2020</span>
+                <span class="shop">Storytelling Workshop</span>
+                <span><i class="fas fa-map-marker-alt"></i> Texas, US</span>
+              </div>
+              <img id="painting-picture"src="img/artist-event-03-250x300.jpg" alt="painting-picture">
+              <div class="contest">
+                <span class="date">OCT 10, 2020</span>
+                <span class="shop">Painting Art Contest 2020</span>
+                <span><i class="fas fa-map-marker-alt"></i> New York, US</span>
+              </div>
+            </div>
+            <div class="sub-down">
+              <div class="funny-girl">
+                <span class="date">NOV 23, 2020</span>
+                <span class="shop">International Art Fair 2020</span>
+                <span><i class="fas fa-map-marker-alt"></i> Hamburg, Germany</span>
+              </div>
+              <img src="img/artist-event-02-250x300.jpg" alt="funny-girl">
+              <div class="wall-paint">
+                <span class="date">DEC 15, 2020</span>
+                <span class="shop">Street Performance: Call for Artist</span>
+                <span><i class="fas fa-map-marker-alt"></i> Illinois, US</span>
+              </div>
+              <img id="painting-picture2"src="img/artist-event-01-250x300.jpg" alt="wall-paint">
+            </div>
+          </div>
+        </div>
+        <!-- Newsletter -->
+        <div class="newsletter">
+          <div class="imgs-sides">
+            <img id="left-side"src="img/artist-shape-color-paint-top-left-300x170.png" alt="artist-hero">
+            <div class="email">
+              <div class="touch">
+                <h4>Newsletter to get in touch</h4>
+              </div>
+              <div class="write-email">
+                <input type="text" name="" value="" placeholder="Your e-mail">
+                <div class="arrow-email">
+                  <button type="button" name="button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <img id="right-side"src="img/artist-shape-color-paint-bottom-right-300x153.png" alt="artist-shape-color-paint">
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer>
+      </footer>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
