@@ -373,21 +373,14 @@
               <a href="#">support@maxcoach.com</a>
             </div>
             <div class="social-icon-footer">
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a v-for= "icon in iconsFooter" href="#"><i :class=icon.icon></i></a>
             </div>
           </div>
           <div class="explore">
             <h4>Explore</h4>
             <div class="info-footer">
               <ul>
-                <li><a href="">Start here</a></li>
-                <li><a href="">Success story</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Courses</a></li>
-                <li><a href="">Contact us</a></li>
+                <li v-for="item in navbarExplore"><a href="">{{item.menu}}</a></li>
               </ul>
             </div>
           </div>
@@ -395,19 +388,14 @@
             <h4>Information</h4>
             <div class="info-footer">
               <ul>
-                <li><a href="">Membership</a></li>
-                <li><a href="">Purchase guide</a></li>
-                <li><a href="">Privacy policy</a></li>
-                <li><a href="">Terms of services</a></li>
+                <li v-for="item in navbarInformation"><a href="">{{item.menu}}</a></li>
               </ul>
             </div>
           </div>
           <div class="instagram">
             <h4>Instagram <mark>@maxcoach</mark></h4>
             <div class="imgs-footer">
-              <img src="img/man2.jpg" alt="man.jpg">
-              <img src="img/artist-event-03-250x300.jpg" alt="">
-              <img src="img/artist-event-02-250x300.jpg" alt="">
+              <img v-for="img in imgFooter" :src=img.img :alt=img.alt>
             </div>
           </div>
         </div>

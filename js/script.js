@@ -43,13 +43,66 @@ var app = new Vue (
           icon: "fab fa-linkedin",
         },
       ],
-      webSiteLogo:'img/dark-logo.png'
-   },
-   methods : {
-     nextImg: function () {
-     },
-     prevImg: function () {
-     }
+      webSiteLogo:'img/dark-logo.png',
+      imgFooter: [
+        {
+          img: "img/man2.jpg",
+          alt: "man2.jpg"
+        },
+        {
+          img: "img/artist-event-03-250x300.jpg",
+          alt: "artist-event-03-250x300"
+        },
+        {
+          img: "img/artist-event-02-250x300.jpg",
+          alt:"artist-event-03-250x300"
+        }
+      ],
+      navbarExplore:[
+        {
+        menu: 'Start here',
+        },
+        {
+        menu: 'Success story',
+        },
+        {
+        menu: 'Blog',
+        },
+        {
+        menu: 'Courses',
+        },
+        {
+        menu: 'Contact us',
+        }
+      ],
+      navbarInformation:[
+        {
+        menu: 'Membership',
+        },
+        {
+        menu: 'Purchase guide',
+        },
+        {
+        menu: 'Privacy policy',
+        },
+        {
+        menu: 'Terms of services',
+        }
+      ],
+      iconsFooter: [
+        {
+          icon: "fab fa-facebook-square",
+        },
+        {
+          icon: "fab fa-twitter",
+        },
+        {
+          icon: "fab fa-instagram",
+        },
+        {
+          icon: "fab fa-linkedin",
+        },
+      ]
    }
   }
 );
