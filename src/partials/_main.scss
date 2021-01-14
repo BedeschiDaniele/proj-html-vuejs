@@ -533,7 +533,7 @@
     font-size: 22px;
     font-weight: 600;
     a {
-      color: #8C89A2;
+      color: $color-grey;
       text-decoration: none;
     }
     i {
@@ -542,6 +542,73 @@
     }
     #color-view {
       color: $color-arrow;
+    }
+  }
+}
+// work-together
+.work-together {
+  text-align: center;
+  margin-bottom: 100px;
+  h3 {
+    @include h3-style;
+  }
+  p {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .wrapper-66 {
+    width: calc(100% - (2*17%));
+    margin: auto;
+    margin-top: 100px;
+    span {
+      color: $color-grey;
+    }.shop {
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      color: black;
+    }
+    .date {
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0 0 6px;
+    }
+    i {
+      margin-right: 5px;
+    }
+    #painting-picture {
+      padding-left: 13%;
+    }
+    #painting-picture2 {
+      padding-left: 50px;
+    }
+    .sub-top , .sub-down {
+        display: flex;
+      .women-coffe-info, .contest , .wall-paint, .funny-girl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+        align-items: flex-start;
+      }
+    }
+    .sub-down {
+      margin-top: 80px;
+      .wall-paint, .funny-girl {
+        align-items: flex-end;
+        padding-right: 50px;
+        padding-left: 0px;
+      }
+      .wall-paint {
+        padding-right: 0px;
+        padding-left: 13%;
+      }
+      .shop {
+        text-align: end;
+      }
     }
   }
 }

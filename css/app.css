@@ -661,3 +661,73 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 .blog #info-arrow #color-view {
   color: #EF6F31;
 }
+
+.work-together {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.work-together h3 {
+  font-family: "Hachi Maru Pop";
+  font-size: 40px;
+  color: #6AC5F1;
+}
+.work-together p {
+  font-size: 50px;
+  font-weight: 700;
+}
+.work-together .wrapper-66 {
+  width: calc(100% - (2*17%));
+  margin: auto;
+  margin-top: 100px;
+}
+.work-together .wrapper-66 span {
+  color: #8C89A2;
+}
+.work-together .wrapper-66 .shop {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: black;
+}
+.work-together .wrapper-66 .date {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 6px;
+}
+.work-together .wrapper-66 i {
+  margin-right: 5px;
+}
+.work-together .wrapper-66 #painting-picture {
+  padding-left: 13%;
+}
+.work-together .wrapper-66 #painting-picture2 {
+  padding-left: 50px;
+}
+.work-together .wrapper-66 .sub-top, .work-together .wrapper-66 .sub-down {
+  display: flex;
+}
+.work-together .wrapper-66 .sub-top .women-coffe-info, .work-together .wrapper-66 .sub-top .contest, .work-together .wrapper-66 .sub-top .wall-paint, .work-together .wrapper-66 .sub-top .funny-girl, .work-together .wrapper-66 .sub-down .women-coffe-info, .work-together .wrapper-66 .sub-down .contest, .work-together .wrapper-66 .sub-down .wall-paint, .work-together .wrapper-66 .sub-down .funny-girl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  align-items: flex-start;
+}
+.work-together .wrapper-66 .sub-down {
+  margin-top: 80px;
+}
+.work-together .wrapper-66 .sub-down .wall-paint, .work-together .wrapper-66 .sub-down .funny-girl {
+  align-items: flex-end;
+  padding-right: 50px;
+  padding-left: 0px;
+}
+.work-together .wrapper-66 .sub-down .wall-paint {
+  padding-right: 0px;
+  padding-left: 13%;
+}
+.work-together .wrapper-66 .sub-down .shop {
+  text-align: end;
+}
