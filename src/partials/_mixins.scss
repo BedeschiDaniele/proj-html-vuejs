@@ -17,3 +17,14 @@
   padding-top: 20px;
   font-size: 20px;
 }
+
+@mixin min-picture {
+  width: 270px;
+  height: 270px;
+  background-size: cover;
+  margin: auto;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

@@ -516,3 +516,148 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   background-color: rgba(239, 111, 49, 0.1);
   color: #EF7033;
 }
+
+.blog {
+  height: 1260px;
+  margin: 100px 0;
+  text-align: center;
+  background-color: #F5F7FA;
+}
+.blog h3 {
+  font-family: "Hachi Maru Pop";
+  font-size: 40px;
+  color: #6AC5F1;
+  padding-top: 100px;
+}
+.blog p {
+  font-size: 50px;
+  font-weight: 700;
+}
+.blog .back-img {
+  position: relative;
+  margin-top: 150px;
+}
+.blog .back-img #line-e {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+}
+.blog .back-img #person-artist {
+  position: absolute;
+  transform: translate(-50%, -11%);
+}
+.blog .back-img #dot-artist {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+}
+.blog .container-artist {
+  display: flex;
+}
+.blog .container-artist .picture-artist {
+  width: 500px;
+  height: 680px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("../img/artist-blog-02-500x680.jpg");
+  margin: auto;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  margin-bottom: 120px;
+}
+.blog .container-artist .picture-artist h4 {
+  padding-left: 40px;
+}
+.blog .container-artist .picture-artist p {
+  padding-left: 40px;
+  font-size: 34px;
+  line-height: 1.42;
+}
+.blog .container-artist .picture-artist .calender {
+  padding: 15px 0 60px 40px;
+}
+.blog .container-artist .picture-artist .calender i {
+  margin-right: 5px;
+}
+.blog .container-artist .picture-artist .calender span {
+  margin-right: 19px;
+}
+.blog .container-artist .right {
+  margin-top: 150px;
+  margin-left: 17%;
+}
+.blog .container-artist .left {
+  margin-top: 50px;
+  margin-right: 17%;
+}
+.blog .container-artist .sub-container {
+  width: 15%;
+  height: 100%;
+  box-shadow: 0 14px 59px rgba(0, 0, 0, 0.15);
+}
+.blog .container-artist .sub-container .man-artist {
+  width: 270px;
+  height: 270px;
+  background-size: cover;
+  margin: auto;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("../img/man2.jpg");
+}
+.blog .container-artist .sub-container .women-artist {
+  width: 270px;
+  height: 270px;
+  background-size: cover;
+  margin: auto;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("../img/artist-blog-01-480x356.jpg");
+}
+.blog .container-artist .sub-container .sub-info {
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+  background-color: white;
+  height: 180px;
+  padding: 26px 20px 35px;
+  line-height: 1.5;
+}
+.blog .container-artist .sub-container .sub-info .post-image {
+  font-size: 15px;
+  color: #8c89a2;
+}
+.blog .container-artist .sub-container .sub-info .post-title {
+  font-size: 20px;
+}
+.blog .container-artist .sub-container .sub-info .calender {
+  padding-top: 15px;
+  color: #7E7E7E;
+}
+.blog .container-artist .sub-container .sub-info .calender i {
+  margin-right: 5px;
+}
+.blog .container-artist .sub-container .sub-info .calender span {
+  margin-right: 19px;
+}
+.blog #info-arrow {
+  font-size: 22px;
+  font-weight: 600;
+}
+.blog #info-arrow a {
+  color: #8C89A2;
+  text-decoration: none;
+}
+.blog #info-arrow i {
+  color: #EF6F31;
+  font-size: 16px;
+}
+.blog #info-arrow #color-view {
+  color: #EF6F31;
+}
