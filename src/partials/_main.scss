@@ -87,6 +87,9 @@
       padding: 20px 35px;
       font-size: 18px;
     }
+    button:hover {
+      background-color: #6AC5F1;
+    }
   }
 }
 // artist-coaching
@@ -243,6 +246,10 @@
       margin-top: 25px;
       background-color: rgba(239, 111, 49, 0.1);
       color: #EF7033;
+    }
+    button:hover {
+      background-color: $color-arrow;
+      color: $color-white;
     }
   }
 }
@@ -414,6 +421,10 @@
     margin-top: 15px;
     background-color: rgba(239, 111, 49, 0.1);
     color: #EF7033;
+  }
+  button:hover {
+    background-color: $color-arrow;
+    color: $color-white;
   }
 }
 // blog

@@ -171,6 +171,9 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   padding: 20px 35px;
   font-size: 18px;
 }
+.matin .description button:hover {
+  background-color: #6AC5F1;
+}
 
 .artist-coaching {
   position: relative;
@@ -336,6 +339,10 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   margin-top: 25px;
   background-color: rgba(239, 111, 49, 0.1);
   color: #EF7033;
+}
+.martin-garrix .panel-right button:hover {
+  background-color: #EF6F31;
+  color: #FFFFFF;
 }
 
 .murales {
@@ -515,6 +522,10 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   margin-top: 15px;
   background-color: rgba(239, 111, 49, 0.1);
   color: #EF7033;
+}
+.courses button:hover {
+  background-color: #EF6F31;
+  color: #FFFFFF;
 }
 
 .blog {
@@ -742,88 +753,6 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .work-together .wrapper-66 .sub-down .shop {
   text-align: end;
-}
-
-.newsletter {
-  width: 100%;
-  height: 200px;
-  background-color: #244186;
-}
-.newsletter .imgs-sides {
-  position: relative;
-  height: 100%;
-}
-.newsletter .imgs-sides #left-side {
-  position: absolute;
-  height: 100%;
-  width: 14%;
-  left: 0%;
-  bottom: 0%;
-}
-.newsletter .imgs-sides #right-side {
-  position: absolute;
-  height: 90%;
-  width: 14%;
-  right: 0%;
-  bottom: 0%;
-}
-.newsletter .imgs-sides .email {
-  display: flex;
-  align-items: center;
-  width: 66%;
-  height: 100%;
-  margin: auto;
-}
-.newsletter .imgs-sides .email .touch {
-  width: 21%;
-  text-align: end;
-  font-family: "Playfair Display", Sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #FFFFFF;
-}
-.newsletter .imgs-sides .email .write-email {
-  padding-left: 100px;
-  color: #FFFFFF;
-}
-.newsletter .imgs-sides .email .write-email input {
-  width: 210%;
-  font-family: "Playfair Display", Sans-serif;
-  font-size: 27px;
-  font-weight: 400;
-  border: none;
-  border-bottom: 2px solid #5B71A4;
-  padding: 5px 10px;
-  background: transparent;
-  color: #FFFFFF;
-}
-.newsletter .imgs-sides .email .write-email ::-moz-placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.newsletter .imgs-sides .email .write-email :-ms-input-placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.newsletter .imgs-sides .email .write-email ::placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.newsletter .imgs-sides .email .write-email textarea:focus, .newsletter .imgs-sides .email .write-email input:focus {
-  outline: none;
-}
-.newsletter .imgs-sides .email .write-email .arrow-email {
-  position: relative;
-}
-.newsletter .imgs-sides .email .write-email .arrow-email button {
-  position: absolute;
-  border: none;
-  border-bottom: 2px solid #5B71A4;
-  background-color: transparent;
-  left: 210%;
-  bottom: 0px;
-  font-size: 35px;
-  color: #FFFFFF;
 }
 
 .newsletter {
