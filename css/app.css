@@ -535,7 +535,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .blog .back-img {
   position: relative;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 .blog .back-img #line-e {
   position: absolute;
@@ -548,7 +548,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .blog .back-img #dot-artist {
   position: absolute;
-  top: 0%;
+  top: 85px;
   left: 40%;
   transform: translate(-50%, -50%);
   width: 10%;
@@ -561,6 +561,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   height: 680px;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("../img/artist-blog-02-500x680.jpg");
   margin: auto;
+  z-index: 1;
   text-align: initial;
   display: flex;
   flex-direction: column;
@@ -588,10 +589,12 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 .blog .container-artist .right {
   margin-top: 150px;
   margin-left: 17%;
+  z-index: 1;
 }
 .blog .container-artist .left {
   margin-top: 50px;
   margin-right: 17%;
+  z-index: 1;
 }
 .blog .container-artist .sub-container {
   width: 15%;
@@ -666,6 +669,15 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   text-align: center;
   margin-bottom: 100px;
 }
+.work-together .circle-right {
+  position: relative;
+}
+.work-together .circle-right #circle {
+  position: absolute;
+  right: 0%;
+  top: 45px;
+  width: 220px;
+}
 .work-together h3 {
   font-family: "Hachi Maru Pop";
   font-size: 40px;
@@ -730,4 +742,168 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .work-together .wrapper-66 .sub-down .shop {
   text-align: end;
+}
+
+.newsletter {
+  width: 100%;
+  height: 200px;
+  background-color: #244186;
+}
+.newsletter .imgs-sides {
+  position: relative;
+  height: 100%;
+}
+.newsletter .imgs-sides #left-side {
+  position: absolute;
+  height: 100%;
+  width: 14%;
+  left: 0%;
+  bottom: 0%;
+}
+.newsletter .imgs-sides #right-side {
+  position: absolute;
+  height: 90%;
+  width: 14%;
+  right: 0%;
+  bottom: 0%;
+}
+.newsletter .imgs-sides .email {
+  display: flex;
+  align-items: center;
+  width: 66%;
+  height: 100%;
+  margin: auto;
+}
+.newsletter .imgs-sides .email .touch {
+  width: 21%;
+  text-align: end;
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.newsletter .imgs-sides .email .write-email {
+  padding-left: 100px;
+  color: #FFFFFF;
+}
+.newsletter .imgs-sides .email .write-email input {
+  width: 210%;
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 2px solid #5B71A4;
+  padding: 5px 10px;
+  background: transparent;
+  color: #FFFFFF;
+}
+.newsletter .imgs-sides .email .write-email ::-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.newsletter .imgs-sides .email .write-email :-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.newsletter .imgs-sides .email .write-email ::placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.newsletter .imgs-sides .email .write-email textarea:focus, .newsletter .imgs-sides .email .write-email input:focus {
+  outline: none;
+}
+.newsletter .imgs-sides .email .write-email .arrow-email {
+  position: relative;
+}
+.newsletter .imgs-sides .email .write-email .arrow-email button {
+  position: absolute;
+  border: none;
+  border-bottom: 2px solid #5B71A4;
+  background-color: transparent;
+  left: 210%;
+  bottom: 0px;
+  font-size: 35px;
+  color: #FFFFFF;
+}
+
+.newsletter {
+  width: 100%;
+  height: 200px;
+  background-color: #244186;
+}
+.newsletter .imgs-sides {
+  position: relative;
+  height: 100%;
+}
+.newsletter .imgs-sides #left-side {
+  position: absolute;
+  height: 100%;
+  width: 14%;
+  left: 0%;
+  bottom: 0%;
+}
+.newsletter .imgs-sides #right-side {
+  position: absolute;
+  height: 90%;
+  width: 14%;
+  right: 0%;
+  bottom: 0%;
+}
+.newsletter .imgs-sides .email {
+  display: flex;
+  align-items: center;
+  width: 66%;
+  height: 100%;
+  margin: auto;
+}
+.newsletter .imgs-sides .email .touch {
+  width: 21%;
+  text-align: end;
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.newsletter .imgs-sides .email .write-email {
+  padding-left: 100px;
+  color: #FFFFFF;
+}
+.newsletter .imgs-sides .email .write-email input {
+  width: 210%;
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 2px solid #5B71A4;
+  padding: 5px 10px;
+  background: transparent;
+  color: #FFFFFF;
+}
+.newsletter .imgs-sides .email .write-email ::-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.newsletter .imgs-sides .email .write-email :-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.newsletter .imgs-sides .email .write-email ::placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.newsletter .imgs-sides .email .write-email textarea:focus, .newsletter .imgs-sides .email .write-email input:focus {
+  outline: none;
+}
+.newsletter .imgs-sides .email .write-email .arrow-email {
+  position: relative;
+}
+.newsletter .imgs-sides .email .write-email .arrow-email button {
+  position: absolute;
+  border: none;
+  border-bottom: 2px solid #5B71A4;
+  background-color: transparent;
+  left: 210%;
+  bottom: 0px;
+  font-size: 35px;
+  color: #FFFFFF;
 }
