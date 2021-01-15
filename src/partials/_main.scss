@@ -292,11 +292,19 @@
     right: 17%;
     bottom: 0%;
   }
-  #murales-man {
+
+  .zoom {
+    overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .zoom > #murales-man {
+  transition: all 1.2s ease-in-out;
+  }
+  .zoom:hover > #murales-man {
+  transform: scale(1.1);
   }
 }
 // testimonials
@@ -386,6 +394,18 @@
     font-size: 50px;
     font-weight: 700;
   }
+  .text-courses {
+    position: relative;
+    #text-cou {
+      position: absolute;
+      right: -18%;
+      bottom: -65px;
+      transform: rotate(90deg) translate(78%, 67%);
+      font-size: 170px;
+      color: #FFFFFF;
+      text-shadow: -1px -1px 0 #F5ECE4, 1px -1px 0 #F5ECE4, -1px 1px 0 #F5ECE4, 1px 1px 0 #F5ECE4;
+    }
+  }
   .course-80 {
     width: $width-80;
     margin: 0 auto;
@@ -394,6 +414,17 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 0;
+    .select-course:hover  .zoom-img > img {
+      transform: scale(1.1);
+    }
+    .select-course:hover  .price {
+      width: 93%;
+      border: 2px solid #EF6F31;
+      transform: translateY(-26%);
+      background-color: white;
+      transition-property: background-color;
+      transition: all 0.4s;
+    }
     .select-course {
       display: flex;
       flex-direction: column;
@@ -405,13 +436,12 @@
         flex-direction: column;
         flex-basis: 200px;
       }
-      .price:hover {
-        width: 93%;
-        border: 2px solid #EF6F31;
-        transform: translateY(-26%);
-        background-color: white;
-        transition-duration: 200ms;
-        transition-property: background-color;
+      .zoom-img {
+        width: 344px;
+        overflow: hidden;
+      }
+      .zoom-img > img {
+        transition: all 1.2s ease-in-out;
       }
       img {
         width: 344px;
@@ -429,6 +459,10 @@
         font-size: 27px;
         font-weight: 600;
         padding-left: 25px;
+        cursor: pointer;
+      }
+      .name-course:hover {
+        color: #EF7033;
       }
       .lessons {
         padding-top: 20px;
@@ -514,6 +548,9 @@
       margin-bottom: 120px;
       h4 {
         padding-left: 40px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
       p {
           padding-left: 40px;
@@ -563,6 +600,9 @@
         .post-image {
           font-size: 15px;
           color: #8c89a2;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 2px;
         }
         .post-title {
           font-size: 20px;
@@ -574,7 +614,7 @@
             margin-right: 5px;
           }
           span {
-            margin-right: 19px;
+            margin-right: 14px;
           }
         }
       }

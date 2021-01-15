@@ -386,11 +386,18 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   right: 17%;
   bottom: 0%;
 }
-.murales #murales-man {
+.murales .zoom {
+  overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.murales .zoom > #murales-man {
+  transition: all 1.2s ease-in-out;
+}
+.murales .zoom:hover > #murales-man {
+  transform: scale(1.1);
 }
 
 .testimonials {
@@ -484,6 +491,18 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   font-size: 50px;
   font-weight: 700;
 }
+.courses .text-courses {
+  position: relative;
+}
+.courses .text-courses #text-cou {
+  position: absolute;
+  right: -18%;
+  bottom: -65px;
+  transform: rotate(90deg) translate(78%, 67%);
+  font-size: 170px;
+  color: #FFFFFF;
+  text-shadow: -1px -1px 0 #F5ECE4, 1px -1px 0 #F5ECE4, -1px 1px 0 #F5ECE4, 1px 1px 0 #F5ECE4;
+}
 .courses .course-80 {
   width: 80%;
   margin: 0 auto;
@@ -492,6 +511,17 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   align-items: center;
   flex-wrap: wrap;
   padding: 50px 0;
+}
+.courses .course-80 .select-course:hover .zoom-img > img {
+  transform: scale(1.1);
+}
+.courses .course-80 .select-course:hover .price {
+  width: 93%;
+  border: 2px solid #EF6F31;
+  transform: translateY(-26%);
+  background-color: white;
+  transition-property: background-color;
+  transition: all 0.4s;
 }
 .courses .course-80 .select-course {
   display: flex;
@@ -505,13 +535,12 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   flex-direction: column;
   flex-basis: 200px;
 }
-.courses .course-80 .select-course .price:hover {
-  width: 93%;
-  border: 2px solid #EF6F31;
-  transform: translateY(-26%);
-  background-color: white;
-  transition-duration: 200ms;
-  transition-property: background-color;
+.courses .course-80 .select-course .zoom-img {
+  width: 344px;
+  overflow: hidden;
+}
+.courses .course-80 .select-course .zoom-img > img {
+  transition: all 1.2s ease-in-out;
 }
 .courses .course-80 .select-course img {
   width: 344px;
@@ -529,6 +558,10 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   font-size: 27px;
   font-weight: 600;
   padding-left: 25px;
+  cursor: pointer;
+}
+.courses .course-80 .select-course .name-course:hover {
+  color: #EF7033;
 }
 .courses .course-80 .select-course .lessons {
   padding-top: 20px;
@@ -621,6 +654,9 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 }
 .blog .container-artist .picture-artist h4 {
   padding-left: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .blog .container-artist .picture-artist p {
   padding-left: 40px;
@@ -685,6 +721,9 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
 .blog .container-artist .sub-container .sub-info .post-image {
   font-size: 15px;
   color: #8c89a2;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .blog .container-artist .sub-container .sub-info .post-title {
   font-size: 20px;
@@ -697,7 +736,7 @@ header .header-down .wrapper-80 .social i:nth-child(4) {
   margin-right: 5px;
 }
 .blog .container-artist .sub-container .sub-info .calender span {
-  margin-right: 19px;
+  margin-right: 14px;
 }
 .blog .details {
   position: absolute;
